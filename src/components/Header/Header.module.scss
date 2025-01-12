@@ -28,3 +28,22 @@
   font-family: 'Open Sans', sans-serif;
   color: black;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: unset;
+    padding-inline: auto;
+    text-align: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+  }
+  .nav ul {
+    gap: 10px;
+  }
+}
