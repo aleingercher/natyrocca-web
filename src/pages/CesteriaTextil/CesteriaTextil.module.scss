@@ -1,0 +1,23 @@
+.cesteriaTextil {
+    display: flex;
+    justify-content: center;
+    height: var(--full-height);
+    .sectionContainer {
+        display: flex;
+        flex-direction: column;
+    
+        .text {
+            padding: 0 20px;
+            text-align: left;         
+        }
+
+        .buttons {
+            margin-top: 40px;
+            padding-inline: 20px ;
+
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+    }
+}

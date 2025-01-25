@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
@@ -9,9 +9,17 @@ const Header: React.FC = () => {
         <h1>natyrocca</h1>
       </div>
       <nav className={styles.nav}>
-        <ul>
-          {/* <li><Link to="/">proyectos</Link></li>
-          <li><Link to="/about">sobre mi</Link></li> */}
+      <ul>
+          <li className={location.pathname === '/' ? styles.active : ''}>
+            <Link to="/">proyectos</Link>
+            <ul className={styles.submenu}>
+              <li><Link to="/cesteria-textil">cesteria textil</Link></li>
+              <li><Link to="/antotipias">fotografía</Link></li>
+            </ul>
+          </li>
+          <li className={location.pathname === '/about' ? styles.active : ''}>
+            <Link to="/about">sobre mí</Link>
+          </li>
         </ul>
       </nav>
     </header>

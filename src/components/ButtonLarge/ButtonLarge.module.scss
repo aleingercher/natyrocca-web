@@ -1,0 +1,26 @@
+.buttonLarge {
+    margin-block: 20px;
+
+    background-image: url('/images/cesteria1.jpg') ;
+    background-size: cover;
+    width: 55%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+        scale: 1.03;
+    }
+    
+}
