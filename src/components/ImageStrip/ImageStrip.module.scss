@@ -7,8 +7,13 @@
     position: relative; // Para establecer un contexto de apilamiento
 
     .frame {
-        height: 280px;
+        width: 280px;
+        line-height: 0;
         position: relative;
+
+        @media (max-width: 480px) {
+            width: 80vw;
+        }
         
         h2 {
             position: absolute;
@@ -50,6 +55,10 @@
         &:focus img {
             transform: scale(1.3);
             filter: brightness(0.8);
+
+            @media (max-width: 768px) {
+                transform: scale(1.1);
+            }
         }
 
     }

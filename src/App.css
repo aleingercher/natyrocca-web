@@ -4,7 +4,7 @@
 
 :root {
     --header-height: 140px;
-    --footer-height: 80px;
+    --footer-height: 120px;
     --full-height: calc(100vh - var(--header-height) - var(--footer-height));    
   }
 
