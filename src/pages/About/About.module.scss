@@ -1,40 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
-}
-
-.sectionContainer {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    height: var(--full-height);
-
-    .image {
-        flex: 0 0 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        object-position: top;
-    }
-
-    .text {
-        flex: 0 0 60%;
-        font-size: 1.2rem;
-        line-height: 1.5;
-        margin-bottom: 20px;
-        font-weight: 100;
-
-        h2 {
-            font-weight: 100;
-            margin-bottom: 20px;
-        }
-    }
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }

@@ -5,8 +5,9 @@
 :root {
     --header-height: 140px;
     --footer-height: 80px;
-    --full-height: calc(100vh - var(--header-height) - var(--footer-height));
+    --full-height: calc(100vh - var(--header-height) - var(--footer-height));    
   }
+
 
 * {
     margin: 0;

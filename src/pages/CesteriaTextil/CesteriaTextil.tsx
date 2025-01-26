@@ -29,13 +29,18 @@ const CesteriaTextil: React.FC = () => {
                     <ButtonLarge 
                         onClick={() => {
                             const link = document.createElement('a');
-                            link.href = '/files/pdfprueba.pdf';
+                            link.href = '/files/catalogo-cesteria-textil.pdf';
                             link.download = 'cesteria_textil_catalogo.pdf';
                             link.click();
                         }} 
                         text="Catálogo de cestería textil" 
                     />
-                    <ButtonLarge onClick={() => {}} text="Cuenco - Talleres de cestería textil" />
+                    <ButtonLarge onClick={() => {
+                            const link = document.createElement('a');
+                            link.href = '/files/info-talleres.pdf';
+                            link.download = 'informacion_talleres_CUENCO.pdf';
+                            link.click();
+                        }}  text="Cuenco - Talleres de cestería textil" />
                 </div>
 			</div>
 		</div>
