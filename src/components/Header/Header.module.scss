@@ -23,7 +23,7 @@
 		margin: 0;
 		font-size: 3rem;
 		font-weight: 100;
-		
+
 		a {
 			text-decoration: none;
 			color: black;
@@ -38,8 +38,8 @@
 }
 
 .fadeIn {
-	animation: fadeIn ease-in-out .5s;
-}	
+	animation: fadeIn ease-in-out 0.5s;
+}
 
 .nav {
 	font-weight: 100;
@@ -64,7 +64,8 @@
 		text-decoration: none;
 		font-family: 'Open Sans', sans-serif;
 		color: black;
-		background-image: linear-gradient(#0b2027, #0b2027),linear-gradient(transparent, transparent);
+		background-image: linear-gradient(#0b2027, #0b2027),
+			linear-gradient(transparent, transparent);
 		background-size: 0 2px, auto;
 		background-repeat: no-repeat;
 		background-position: bottom;
@@ -75,13 +76,8 @@
 		}
 	}
 
-	li:hover .submenu {
-		visibility: visible;
-		opacity: 1;
-	}
-
 	.submenu {
-		display: block;
+		display: none;
 		visibility: hidden;
 		opacity: 0;
 		position: absolute;
@@ -95,13 +91,20 @@
 		li {
 			padding: 5px 0;
 		}
+
 		a {
 			color: black;
 		}
 
-		& :first-child {
+		&:first-child {
 			width: 22ch;
 		}
+	}
+
+	.open {
+		display: block !important;
+		visibility: visible;
+		opacity: 1;
 	}
 }
 
@@ -117,7 +120,6 @@
 	}
 
 	.nav {
-		
 		ul {
 			gap: 10px;
 			flex-direction: column-reverse;
@@ -125,13 +127,20 @@
 
 		.submenu {
 			background-color: white;
-			padding: 10px ;
-			translate:-10px;
+			padding: 10px;
+			translate: -10px;
 		}
 	}
-	
+}
 
-	
+@media (min-width: 768px) {
+	.nav {
+		li:hover .submenu {
+			visibility: visible;
+			opacity: 1;
+			display: block !important;
+		}
+	}
 }
 
 @keyframes fadeIn {
@@ -141,4 +150,4 @@
 	100% {
 		opacity: 1;
 	}
-}	
+}
