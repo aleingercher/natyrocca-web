@@ -16,7 +16,7 @@ export const dataAbout: TextImageProps[] = [
         title: 'BIO',
         texts: [
             'Natalia Rocca (Buenos Aires, 1975)',
-            'Se interesó por los oficios manuales desde una temprana edad. Su recorrido profesional ha sido variado, trabajó veinte años en publicidad y cine, especialmente en las áreas de producción y vestuario, se formó en joyería y cincelado en la Escuela de la Joya ¨Sergio Luquez” y participó en talleres con distintos maestros joyeros. A lo largo de este camino también asistió a cursos de fotografía, laboratorio fotográfico, ilustración infantil y cestería textil.',            
+            'Se interesó por los oficios manuales desde una temprana edad. Su recorrido profesional ha sido variado, trabajó veinte años en publicidad y cine, especialmente en las áreas de producción y vestuario, se formó en joyería y cincelado en la Escuela de la Joya "Sergio Luquez" y participó en talleres con distintos maestros joyeros. A lo largo de este camino también asistió a cursos de fotografía, laboratorio fotográfico, ilustración infantil y cestería textil.',             
             'Desde hace diez años trabaja en el ámbito textil, fue creadora de la marca FRUTO, donde realizó objetos con fibras y tintes naturales. Este último tiempo ha incorporado la fotografía a su producción artística para llevar a cabo una práctica transdisciplinaria entre la imágen y los soportes donde se representan.',
             'Su proyecto más reciente es una serie de antotípias del valle que la rodea, creadas a partir de tintes y plantas de Traslasierra, Córdoba.'
         ]
