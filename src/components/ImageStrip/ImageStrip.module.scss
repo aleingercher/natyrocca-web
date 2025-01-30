@@ -1,0 +1,65 @@
+.imageStrip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    position: relative; // Para establecer un contexto de apilamiento
+
+    .frame {
+        width: 280px;
+        line-height: 0;
+        position: relative;
+
+        @media (max-width: 480px) {
+            width: 80vw;
+        }
+        
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            color: WHITE;
+            font-size: 1.9rem;
+            font-weight: 500;
+            opacity: 0;
+            pointer-events: none; /* Deshabilita interacciones mientras está oculto */
+            transition: opacity 0.2s ease-in-out; /* Prolonga la transición */
+        }
+        
+        &:hover h2,
+        &:focus h2 {
+            opacity: 1;
+            pointer-events: auto; /* Reactiva interacciones si es necesario */
+        }
+        
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 1/1;
+            transition: .2s ease-in-out;
+            position: relative;
+            z-index: 1; // Aseguramos que las imágenes tengan un nivel de apilamiento inicial
+        }
+
+        &:hover,
+        &:focus {
+            z-index: 10; // La imagen en hover se eleva en el contexto de apilamiento
+        }
+        
+        &:hover img,
+        &:focus img {
+            transform: scale(1.3);
+            filter: brightness(0.8);
+
+            @media (max-width: 768px) {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}

@@ -1,8 +1,6 @@
 .layout {
   display: flex;
   flex-direction: column; 
-  min-height: 100vh;
-  height: 100vh;
 }
 
 .header {
@@ -10,9 +8,10 @@
 }
 
 .content {
-  flex-grow: 1;
+  margin-top: var(--header-height);
   overflow: auto; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  
 }
